@@ -2,7 +2,7 @@ import React from 'react';
 import './scss/blog.scss';
 import BlogItem from "../components/blogItem/BlogItem";
 import bg from '../img/blog/blog.png';
-import data from './scss/data.json'
+import data from '../data.json'
 
 const Blog = () => {
 
