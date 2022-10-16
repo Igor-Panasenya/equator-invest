@@ -33,7 +33,7 @@
       gap: 60px;
 
       .wwa-home-text {
-        h3 {
+        h4 {
           margin: 9px 0 17px 0;
         }
         p {
@@ -85,14 +85,15 @@
       flex-direction: row;
       gap: 175px;
 
-      h4 {
+      h3 {
         min-width: 310px;
       }
 
       .focus-area-cards {
         display: flex;
         flex-direction: row;
-        gap: 146px;
+        justify-content: space-between;
+        width: 100%;
       }
     }
   }
@@ -171,6 +172,55 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .home {
+    .wwa-home-content {
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .wwa-home-text {
+          p {
+            margin-bottom: 26px;
+          }
+        }
+        .wwa-home-image-box {
+          img {
+            width: 100%;
+          }
+          .img-text {
+            width: 100%;
+            padding: 30px 0 30px 80px;
+          }
+          svg {
+            bottom: 40px;
+            left: 30px;
+          }
+        }
+      }
+    }
+    .focus-area-home-content {
+      .container {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+    .team-home-content {
+      padding: 150px 0 100px 0;
+
+      .container {
+        .items-frame {
+          margin-top: 36px;
+        }
+      }
+    }
+    .wwlf-content {
+      margin-bottom: 800px;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .home {
     .home-banner {
@@ -187,17 +237,78 @@
         }
       }
     }
+    .wwa-home-content {
+      padding: 80px 0;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        .wwa-home-text {
+          p {
+            margin-bottom: 20px;
+          }
+        }
+        .wwa-home-image-box {
+          .img-text {
+            font-size: 18px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .team-home-content {
+      padding: 214px 0 100px 0;
+
+      .container {
+        position: relative;
+
+        .link-see-more {
+          position: absolute;
+          top: 11px;
+          right: 14.9px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10.5px;
+          width: 126px;
+
+          span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            color: #00463D;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            transition: .15s ease all;
+            width: auto;
+          }
+          svg {
+            width: auto;
+          }
+          &:hover span {
+            text-decoration-line: underline;
+          }
+        }
+
+        .items-frame {
+          margin-top: 36px;
+        }
+
+      }
+    }
+    .stories-home-content {
+      padding: 50px 0;
+    }
+    .wwlf-content {
+      margin-bottom: 900px;
+    }
   }
 }
 
-.home {
-  h2 {
-    color: #1B1B1B;
-  }
-  h3 {
-    color: #1B1B1B;
-  }
-}
 @media screen and (max-width: 500px) {
   .home {
     .home-banner {
@@ -213,6 +324,74 @@
           line-height: 14px;
 
           max-width: 610px;
+        }
+      }
+    }
+    .wwa-home-content {
+      .container {
+        .wwa-home-text {
+          h4 {
+            margin: 5px 0 10px 0;
+          }
+          p {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+        .wwa-home-image-box {
+          .img-text {
+            padding: 10px 0 10px 20px;
+            font-size: 10px;
+            line-height: 12px;
+          }
+          svg {
+            width: 10px;
+            height: auto;
+            bottom: 15px;
+            left: 5px;
+          }
+        }
+      }
+    }
+    .focus-area-home-content {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+      .container {
+        .focus-area-cards {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+        }
+      }
+    }
+    .team-home-content {
+      padding: 50px 0;
+      .container {
+        .link-see-more {
+          top: 12px;
+          right: -20px;
+
+          span {;
+            font-size: 12px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .stories-home-content {
+      padding: 10px 0;
+    }
+    .wwlf-content {
+      padding: 70px 0 50px 0;
+      -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+      margin-bottom: 850px;
+
+      .container {
+        p {
+          margin: 16px 0 24px 0;
+          font-size: 12px;
         }
       }
     }

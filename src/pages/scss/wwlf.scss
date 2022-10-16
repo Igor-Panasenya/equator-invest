@@ -5,6 +5,10 @@
 
     .container {
 
+      h2 {
+        color: #FFFFFF;
+      }
+
       p {
         margin-top: 29px;
         font-weight: 400;
@@ -28,10 +32,9 @@
         gap: 24px;
         margin-top: 40px;
       }
-
       .FAQ-frame {
         width: 952px;
-        margin: 191px auto 200px auto;
+        margin: 191px auto 480px auto;
 
         .FAQ-items {
           display: flex;
@@ -66,7 +69,18 @@
 
         .FAQ-frame {
           width: 850px;
-          margin: 191px auto 200px auto;
+          margin: 191px auto 400px auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .what-we-look-for {
+    .wwlf-content {
+      .container {
+        .FAQ-frame {
+          margin: 191px auto 650px auto;
         }
       }
     }
@@ -112,7 +126,7 @@
 
         .FAQ-frame {
           width: 98%;
-          margin: 50px auto 50px auto;
+          margin: 50px auto 650px auto;
 
           h4 {
             display: flex;
@@ -123,19 +137,16 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .what-we-look-for {
     .bg-image {
       width: auto;
       height: 320px;
     }
-
     .wwlf-banner {
       padding-top: 60px;
       padding-bottom: 30px;
-
       .container {
-
         p {
           margin-top: 20px;
           margin-bottom: 30px;
@@ -152,6 +163,16 @@
       .container {
         .focus-frame {
           margin-top: 20px;
+        }
+        .FAQ-frame {
+          width: 100%;
+          margin: 191px auto 850px auto;
+          .FAQ-items {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: 30px;
+          }
         }
       }
     }

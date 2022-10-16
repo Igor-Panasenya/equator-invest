@@ -5,9 +5,12 @@
 
     .container {
 
-      h3 {
+      h2 {
         color: #fff;
+      }
+      h4 {
         margin: 11px 0 15px 0;
+        color: #fff;
       }
 
       p {
@@ -25,6 +28,8 @@
     }
   }
   .wwa-content {
+    margin-bottom: 280px;
+
     .container {
       padding-top: 104px;
       padding-bottom: 200px;
@@ -39,13 +44,9 @@
         gap: 24px;
       }
 
-      .our-team-advisors {
+      h5 {
         margin-top: 158px;
-        font-weight: 600;
-        font-size: 28px;
-        line-height: 34px;
-
-        color: #333333;
+        margin-bottom: 24px;
       }
     }
   }
@@ -60,13 +61,23 @@
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
   .wwa-content {
+
     .container {
+      padding-bottom: 200px;
+      padding-top: 104px;
+      margin-bottom: 500px;
+
+      h3, h5 {
+        display: flex;
+        justify-content: center;
+      }
       .items-frame {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        justify-content: center;
       }
     }
   }
@@ -111,21 +122,20 @@
           justify-content: center;
           gap: 24px;
         }
-
       }
     }
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 600px) {
   .who-we-are {
     .bg-image {
       width: auto;
-      height: 380px;
+      height: 450px;
     }
 
     .wwa-banner {
-      padding: 60px 0;
+      padding: 100px 0;
 
       .container {
 
@@ -137,6 +147,7 @@
       }
     }
     .wwa-content {
+      margin-bottom: 850px;
       .container {
         padding-top: 30px;
         padding-bottom: 50px;
@@ -157,7 +168,7 @@
   .who-we-are {
     .bg-image {
       width: auto;
-      height: 420px;
+      height: 480px;
     }
   }
 }

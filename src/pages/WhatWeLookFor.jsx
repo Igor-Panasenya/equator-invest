@@ -105,7 +105,7 @@ const WhatWeLookFor = () => {
 
             <section className="wwlf-banner">
                 <div className="container">
-                    <h1>What We Look For</h1>
+                    <h2>What We Look For</h2>
                     <p>We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders.
                         <br /><br />
                         DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential.
@@ -115,7 +115,7 @@ const WhatWeLookFor = () => {
 
             <section className="wwlf-content">
                 <div className="container">
-                    <h4>Focus Areas</h4>
+                    <h3>Focus Areas</h3>
 
                     <div className="focus-frame">
                         {wwlfItem.map(item =>
@@ -124,7 +124,7 @@ const WhatWeLookFor = () => {
                     </div>
 
                     <div className="FAQ-frame">
-                        <h4>Entrepreneur FAQs</h4>
+                        <h5>Entrepreneur FAQs</h5>
 
                         <ul className="FAQ-items">
                             {faqItem.map(item =>
@@ -132,8 +132,6 @@ const WhatWeLookFor = () => {
                             )}
                         </ul>
                     </div>
-
-
                 </div>
             </section>
         </div>

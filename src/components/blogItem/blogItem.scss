@@ -5,9 +5,130 @@
     gap: 80px;
     border-bottom: 1px solid #00975A;
 
-    img {
-        border: red solid 1px;
-        width: 100%;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
+    .item-content {
+        h5 {
+            margin-bottom: 16px;
+        }
+        .blog-item-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            list-style: square;
+
+            li {
+                position: relative;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                color: #404040;
+
+                span {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #3C3C3C;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 7px;
+                    left: -15px;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: #292929;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 530px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .blog-item {
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .blog-item {
+        padding: 50px;
+        gap: 40px;
+
+        img {
+            width: 430px;
+            height: auto;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .blog-item {
+        padding: 40px 10px;
+        flex-direction: column;
+        gap: 40px;
+
+        &:nth-child(even) {
+            flex-direction: column;
+        }
+        img {
+            width: 450px;
+            height: auto;
+        }
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .blog-item {
+        padding: 20px 5px;
+        flex-direction: column;
+        gap: 20px;
+
+        h5 {
+            text-align: center;
+        }
+        .item-body {
+            font-size: 12px;
+            text-align: center;
+        }
+        .blog-item-list {
+            gap: 10px;
+
+            li {
+
+                p {
+                    font-size: 12px;
+                    line-height: 12px;
+
+                    span {
+                        font-size: 12px!important;
+                        line-height: 12px;
+                    }
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: column;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

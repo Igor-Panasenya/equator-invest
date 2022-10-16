@@ -2,7 +2,7 @@ import React from 'react';
 import './scss/blog.scss';
 import BlogItem from "../components/blogItem/BlogItem";
 import bg from '../img/blog/blog.png';
-import data from '../data.json'
+import NewslettersInput from "../components/IU/newsletter-input/NewslettersInput";
 
 const Blog = () => {
 
@@ -25,10 +25,24 @@ const Blog = () => {
             id: 3,
             title: "Advice",
             body: "",
-            list: {
-                liTitle: "Product",
-                liBody: "As a team of former founders with a strong background, we are open to helping our founders get product-market fit.",
-            },
+            list: [
+                {
+                    liTitle: "Product",
+                    liBody: " As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
+                },
+                {
+                    liTitle: "Growth",
+                    liBody: "We help you set your growth playbook right by advising on the best growth strategies at the early stage."
+                },
+                {
+                    liTitle: "Engineering",
+                    liBody: "We have strategic partnerships with studios such as Ultiro that will help our early-stage companies through major technical decisions."
+                },
+                {
+                    liTitle: "Sales",
+                    liBody: "We advise our founders on how to build the best sales engines that turn little resources into more."
+                }
+            ],
             photo: "../../img/blog/blog_03.png",
         },
         {
@@ -42,10 +56,24 @@ const Blog = () => {
             id: 5,
             title: "Advice",
             body: "",
-            list: {
-                liTitle: "Product",
-                liBody: "As a team of former founders with a strong background, we are open to helping our founders get product-market fit.",
-            },
+            list: [
+                {
+                    liTitle: "Product",
+                    liBody: " As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
+                },
+                {
+                    liTitle: "Growth",
+                    liBody: "We help you set your growth playbook right by advising on the best growth strategies at the early stage."
+                },
+                {
+                    liTitle: "Engineering",
+                    liBody: "We have strategic partnerships with studios such as Ultiro that will help our early-stage companies through major technical decisions."
+                },
+                {
+                    liTitle: "Sales",
+                    liBody: "We advise our founders on how to build the best sales engines that turn little resources into more."
+                }
+            ],
             photo: "../../img/blog/blog_03.png",
         },
         {
@@ -57,28 +85,38 @@ const Blog = () => {
         },
     ]
 
-    console.log(data)
-
+    var data = require('../data.json');
 
     return (
-        <section className="blog">
+        <div className="blog">
 
             <img className="bg-image" src={bg} alt=""/>
 
-            <div className="blog-banner">
+            <section className="blog-banner">
                 <div className="container">
-                    <h1>Blog</h1>
+                    <h2>Blog</h2>
                 </div>
-            </div>
+            </section>
 
-            <div className="container">
+            <section className="container">
                 <div className="items-frame">
                     {blogItems.map(item =>
                         <BlogItem key={item.id} item={item} />
                     )}
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section className="newsletter-box">
+                <div className="container">
+                    <div className="newsletter-left">
+                        <NewslettersInput />
+                    </div>
+                    <div className="newsletter-right">
+                        <button className="btn-type-primary">Pich US</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 };
 

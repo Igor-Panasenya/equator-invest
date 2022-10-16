@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-    --transition: all ease .15s;
+    --transition: all ease .25s;
 }
 
 html, body {
@@ -63,14 +63,6 @@ h2 {
     color: #1B1B1B;
 }
 h3 {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 39px;
-    display: flex;
-    align-items: center;
-    color: #1B1B1B;
-}
-h4 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -78,15 +70,15 @@ h4 {
     align-items: center;
     color: #2E2E2E;
 }
-h5 {
+h4 {
     font-weight: 300;
     font-size: 32px;
     line-height: 39px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #1B1B1B;;
 }
-h6 {
+h5 {
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
@@ -183,22 +175,30 @@ header {
         line-height: 16px;
         padding: 10px 31px;
     }
+    .items-frame {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
     h2 {
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 32px;
+        line-height: 34px;
     }
     h3 {
         font-size: 26px;
         line-height: 28px;
     }
     h4 {
-        font-size: 26px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    h5 {
+        font-size: 28px;
+        line-height: 34px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -206,18 +206,22 @@ header {
         padding: 15px;
     }
     h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
     h2 {
-        font-size: 18px;
-        line-height: 20px;
-    }
-    h3 {
-        font-size: 26px;
-        line-height: 28px;
-    }
-    h4 {
         font-size: 22px;
         line-height: 24px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 20px;
     }
 }

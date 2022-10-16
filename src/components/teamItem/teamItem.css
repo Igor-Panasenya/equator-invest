@@ -22,7 +22,6 @@
 .team-item img {
   width: 160px;
   height: 160px;
-  border: teal solid 2px;
 }
 .team-item .team-iteam-content {
   display: flex;

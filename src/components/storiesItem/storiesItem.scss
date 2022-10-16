@@ -54,3 +54,16 @@
 
     }
 }
+
+@media screen and (max-width: 500px) {
+    .stories-item {
+        .stories-text {
+            padding: 15px;
+
+            p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+}

@@ -6,8 +6,8 @@ const NotFound = () => {
     return (
         <div className="not-found">
             <div className="container">
-                <h1>Not Found Page</h1>
-                <Link to="/" style={{color: "#333"}}>Home</Link>
+                <h1>Soory, Not Found Page ! :(</h1>
+                <Link onClick={() => window.scroll(0,0)} to="/" style={{color: "#333"}}>Home</Link>
             </div>
         </div>
     );

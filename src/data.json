@@ -18,10 +18,24 @@
       "id": "3",
       "title": "Advice",
       "body": "",
-      "list": {
-        "liTitle": "Product",
-        "liBody": "As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
-      },
+      "list": [
+        {
+          "liTitle": "Product",
+          "liBody": " As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
+        },
+        {
+          "liTitle": "Growth",
+          "liBody": "We help you set your growth playbook right by advising on the best growth strategies at the early stage."
+        },
+        {
+          "liTitle": "Engineering",
+          "liBody": "We have strategic partnerships with studios such as Ultiro that will help our early-stage companies through major technical decisions."
+        },
+        {
+          "liTitle": "Sales",
+          "liBody": "We advise our founders on how to build the best sales engines that turn little resources into more."
+        }
+      ],
       "photo": "../../img/blog/blog_03.png"
     },
     {
@@ -35,10 +49,24 @@
       "id": "5",
       "title": "Advice",
       "body": "",
-      "list": {
-        "liTitle": "Product",
-        "liBody": "As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
-      },
+      "list": [
+        {
+          "liTitle": "Product",
+          "liBody": " As a team of former founders with a strong background, we are open to helping our founders get product-market fit."
+        },
+        {
+          "liTitle": "Growth",
+          "liBody": "We help you set your growth playbook right by advising on the best growth strategies at the early stage."
+        },
+        {
+          "liTitle": "Engineering",
+          "liBody": "We have strategic partnerships with studios such as Ultiro that will help our early-stage companies through major technical decisions."
+        },
+        {
+          "liTitle": "Sales",
+          "liBody": "We advise our founders on how to build the best sales engines that turn little resources into more."
+        }
+      ],
       "photo": "../../img/blog/blog_03.png"
     },
     {

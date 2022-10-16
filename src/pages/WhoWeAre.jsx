@@ -44,7 +44,7 @@ const WhoWeAre = () => {
             id: 2,
             name: "Clava Si",
             jobTitle: "Founder",
-            photo: "../../img/wwa/team_05.png",
+            photo: "../../img/wwa/team_06.png",
             linkedIn: "https://ru.linkedin.com/",
             twitter: "https://twitter.com/?lang=ru",
         },
@@ -52,7 +52,7 @@ const WhoWeAre = () => {
             id: 3,
             name: "Vetal Pent",
             jobTitle: "Founder",
-            photo: "../../img/wwa/team_06.png",
+            photo: "../../img/wwa/team_05.png",
             linkedIn: "https://ru.linkedin.com/",
             twitter: "https://twitter.com/?lang=ru",
         },
@@ -64,8 +64,8 @@ const WhoWeAre = () => {
 
             <div className="wwa-banner">
                 <div className="container">
-                    <h1>Who We are</h1>
-                    <h3>We are builders just like you</h3>
+                    <h2>Who We are</h2>
+                    <h4>We are builders just like you</h4>
                     <p>Way before we started this fund, we founded startups and were part of early-stage companies. We understand just amazing or hard doing a startup can be, therefore we will listen, empathize and give real advise.
                         <br /><br />
                         Equator Invest is a Swedish based early-stage venture studio, we are deploying a $5M fund over the next 2 years into great teams building Fintech companies in East-Africa
@@ -84,7 +84,7 @@ const WhoWeAre = () => {
                     </div>
 
 
-                    <h3 className="our-team-advisors">Advisors </h3>
+                    <h5>Advisors </h5>
 
                     <div className="items-frame">
                         {advisorsItems.map(item =>

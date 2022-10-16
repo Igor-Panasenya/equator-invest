@@ -15,20 +15,22 @@ footer .container .footer-column {
   justify-content: space-between;
 }
 footer .container .left-column {
-  width: 316px;
-  border: red solid 1px;
+  width: 350px;
 }
 footer .container .left-column .socials {
   display: flex;
   align-items: center;
   gap: 37px;
+  transition: all ease 0.1s;
+}
+footer .container .left-column .socials a * {
+  transition: all ease 0.5s;
 }
 footer .container .left-column .socials a:hover, footer .container .left-column .socials a:hover * {
   scale: 1.05;
 }
 footer .container .mid-column {
-  width: 845px;
-  border: red solid 1px;
+  width: 800px;
 }
 footer .container .mid-column .menu {
   display: flex;
@@ -40,49 +42,24 @@ footer .container .mid-column .menu .menu-item {
   font-size: 14px;
   line-height: 17px;
 }
-footer .container .mid-column .newsletter form {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  gap: 1px;
-}
-footer .container .mid-column .newsletter form label {
-  display: flex;
-  flex-direction: column;
+footer .container .mid-column .newsletter label article {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  text-align: start;
   color: #FFFFFF;
-  gap: 9px;
+  margin: 0;
 }
-footer .container .mid-column .newsletter form label input {
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #E1E1E1;
-  width: 220px;
-  transition: var(--transition);
+footer .container .right-column {
+  width: 500px;
+  gap: 26px;
 }
-footer .container .mid-column .newsletter form label input::placeholder {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
+footer .container .right-column a {
+  display: flex;
+  gap: 16px;
 }
-footer .container .mid-column .newsletter form label input:hover {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 151, 90, 0.2);
-  box-shadow: 0px 0px 4px 2px rgba(125, 125, 125, 0.15);
-}
-footer .container .mid-column .newsletter form label input:active, footer .container .mid-column .newsletter form label input:focus {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 151, 90, 0.5);
-  box-shadow: 0px 0px 8px rgba(149, 149, 149, 0.1);
-}
-footer .container .mid-column .newsletter form .submit {
-  width: 64px;
-  height: 48px;
-  background: #00975A;
+footer .container .right-column a img {
+  width: auto;
+  max-height: 26px;
 }
 footer .footer-info {
   font-style: normal;
@@ -98,9 +75,89 @@ footer .footer-info {
 }
 
 @media screen and (max-width: 1300px) {
+  footer .container {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 40px;
+  }
+  footer .container .left-column {
+    flex-direction: row;
+    width: 100%;
+  }
+  footer .container .mid-column {
+    width: 100%;
+  }
+  footer .container .mid-column .menu {
+    gap: 40px;
+    padding: 30px 9px;
+  }
+  footer .container .right-column {
+    width: 500px;
+    gap: 20px;
+  }
   footer .footer-info {
-    font-size: 10px;
-    line-height: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 11px 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .container .left-column {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  footer .container .mid-column {
+    width: 100%;
+  }
+  footer .container .mid-column .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 9px;
+  }
+  footer .container .mid-column .newsletter {
+    margin: 20px auto;
+  }
+  footer .container .mid-column .newsletter label {
+    margin: 0;
+  }
+  footer .container .mid-column .newsletter label article {
+    text-align: end;
+  }
+  footer .container .mid-column .newsletter label article {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  footer .container .right-column {
+    width: 100%;
+    gap: 20px;
+  }
+  footer .container .right-column a {
+    display: flex;
+    gap: 16px;
+  }
+  footer .container .right-column a p {
+    font-size: 12px;
+  }
+  footer .container .right-column a img {
+    width: auto;
+    max-height: 26px;
+  }
+  footer .footer-info {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

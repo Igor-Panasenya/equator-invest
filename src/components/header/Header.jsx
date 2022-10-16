@@ -8,10 +8,6 @@ import logo from '../../img/logo_header.svg';
 const Header = () => {
 
     const [isActiveHamburger, setIsActiveHamburger] = useState(false);
-    const onClickLogo = () => {
-        window.scroll(0,0);
-        setIsActiveHamburger(false);
-    }
 
     return (
         <header>

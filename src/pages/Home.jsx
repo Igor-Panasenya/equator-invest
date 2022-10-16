@@ -8,7 +8,26 @@ import {Link} from "react-router-dom";
 
 const Home = () => {
 
-    const focusItems = ["Web 3.0", "Digital Infrastructure", "Fintech"]
+    const focusItems = [
+        {
+            id: 1,
+            title: "Web 3.0",
+            body: "Web 3.0 (Web3) is the third generation of the evolution of web technologies. The web, also known as the World Wide Web, is the foundational layer for how the internet is used, providing website and application services.",
+            image: "../../img/wwlf/focus-item-01.png",
+        },
+        {
+            id: 2,
+            title: "Digital Infrastructure",
+            body: "Digital infrastructure refers to the digital technologies that provide the foundation for an organization's information technology and operations",
+            image: "../../img/wwlf/focus-item-02.png",
+        },
+        {
+            id: 3,
+            title: "Fintech",
+            body: "Fintech a portmanteau of \"financial technology\" refers to firms using new technology to compete with traditional financial methods in the delivery of financial services.",
+            image: "../../img/wwlf/focus-item-03.png",
+        },
+    ]
     const teamItems = [
         {
             id: 1,
@@ -62,10 +81,9 @@ const Home = () => {
 
             <section className="wwa-home-content">
                 <div className="container">
-
                     <div className="wwa-home-text">
                         <h2>Who We are</h2>
-                        <h3>We are builders just like you</h3>
+                        <h4>We are builders just like you</h4>
 
                         <p>Way before we started this fund, we founded startups and were part of early-stage companies. We understand just amazing or hard doing a startup can be, therefore we will listen, empathize and give real advise.
                             <br /><br />
@@ -74,7 +92,6 @@ const Home = () => {
 
                         <Link to="/who-we-are" onClick={() => window.scroll(0,0)} className="btn-type-secondary">Learn more</Link>
                     </div>
-
                     <div className="wwa-home-image-box">
                         <img className="wwa-home-image" src={imageWWA} alt="photo" />
                         <p className="img-text">We back you when no one else want to</p>
@@ -82,15 +99,13 @@ const Home = () => {
                             <path d="M6.5 27.5C4.9087 27.5 3.38258 26.8679 2.25736 25.7426C1.13214 24.6174 0.5 23.0913 0.5 21.5C0.5 19.2905 2.4995 12.29 6.5 0.5H9.5L6.5 15.5C8.0913 15.5 9.61742 16.1321 10.7426 17.2574C11.8679 18.3826 12.5 19.9087 12.5 21.5C12.5 23.0913 11.8679 24.6174 10.7426 25.7426C9.61742 26.8679 8.0913 27.5 6.5 27.5V27.5ZM21.5 27.5C19.9087 27.5 18.3826 26.8679 17.2574 25.7426C16.1321 24.6174 15.5 23.0913 15.5 21.5C15.5 19.2905 17.4995 12.29 21.5 0.5H24.5L21.5 15.5C23.0913 15.5 24.6174 16.1321 25.7426 17.2574C26.8679 18.3826 27.5 19.9087 27.5 21.5C27.5 23.0913 26.8679 24.6174 25.7426 25.7426C24.6174 26.8679 23.0913 27.5 21.5 27.5Z" fill="white"/>
                         </svg>
                     </div>
-
-
                 </div>
 
             </section>
 
             <section className="focus-area-home-content">
                 <div className="container">
-                    <h4>Our Focus Areas</h4>
+                    <h3>Our Focus Areas</h3>
 
                     <div className="focus-area-cards">
 
@@ -103,7 +118,7 @@ const Home = () => {
 
             <section className="team-home-content">
                 <div className="container">
-                    <h4>Our Team</h4>
+                    <h3>Our Team</h3>
 
                     <Link onClick={() => window.scroll(0,0)} className="link-see-more" to="/who-we-are">
                         <span>See more</span>
@@ -123,7 +138,7 @@ const Home = () => {
 
             <section className="stories-home-content">
                 <div className="container">
-                    <h2>Our Stories</h2>
+                    <h3>Our Stories</h3>
 
                     <div className="items-frame">
                         {storiesItems.map(item =>
@@ -136,12 +151,11 @@ const Home = () => {
 
             <section className="wwlf-content">
                 <div className="container">
-                    <h2>What We Look For</h2>
+                    <h3>What We Look For</h3>
                     <p>
                         We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential.
                     </p>
-
-                    <button className="btn-type-secondary">Pitch Us</button>
+                    <Link to="/what-we-look-for" onClick={() => window.scroll(0,0)} className="btn-type-secondary">Pitch Us</Link>
                 </div>
             </section>
         </div>

@@ -40,7 +40,7 @@ header .navbar-container .header-buttons {
 }
 header .navbar-container .hamburger {
   position: relative;
-  right: 30px;
+  right: 20px;
   display: none;
   cursor: pointer;
   background-color: transparent;
@@ -151,7 +151,7 @@ header .navbar-container .hamburger .bar-mid {
   }
   header .navbar-container .hamburger.active {
     position: fixed;
-    right: 40px;
+    right: 30px;
   }
   header .navbar-container .hamburger.active .bar-mid {
     opacity: 0;

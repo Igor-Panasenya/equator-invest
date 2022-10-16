@@ -5,6 +5,10 @@
 
         .container {
 
+            h2 {
+                color: #fff;
+            }
+
             p {
                 margin-top: 29px;
                 font-weight: 400;
@@ -29,19 +33,12 @@
             gap: 4px;
             column-gap: 146px;
             padding-top: 27px;
-
-
-            .item {
-                border: red solid 1px;
-                width: 100%;
-                height: 68px;
-            }
         }
     }
     .iwu-about-equator {
         background: rgba(77, 183, 93, 0.3);
-        box-shadow: 0px 0px 8px 2px rgba(120, 120, 120, 0.2);
-        margin-bottom: 172px;
+        box-shadow: 0 0 8px 2px rgba(120, 120, 120, 0.2);
+        margin-bottom: 452px;
 
         .container {
             padding-top: 62px;
@@ -76,6 +73,36 @@
             width: auto;
             height: 480px;
         }
+        .iwu-FAQ {
+            padding-top: 54px;
+            padding-bottom: 135px;
+            width: 100%;
+
+            .investor-FAQ-frame {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 4px;
+                column-gap: 1%;
+                padding-top: 27px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .invest-with-us {
+        .iwu-FAQ {
+            padding-top: 54px;
+            padding-bottom: 135px;
+            width: 100%;
+
+            .investor-FAQ-frame {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .iwu-about-equator {
+            margin-bottom: 700px;
+        }
     }
 }
 @media screen and (max-width: 900px) {
@@ -84,7 +111,6 @@
             width: auto;
             height: 400px;
         }
-
         .iwu-banner {
             padding-top: 132px;
             padding-bottom: 60px;
@@ -103,13 +129,12 @@
         }
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .invest-with-us {
         .bg-image {
             width: auto;
             height: 280px;
         }
-
         .iwu-banner {
             padding-top: 60px;
             padding-bottom: 30px;
@@ -123,6 +148,19 @@
                     line-height: 14px;
 
                     max-width: 610px;
+                }
+            }
+        }
+        .iwu-about-equator {
+            margin-bottom: 850px;
+
+            .container {
+
+                .about-equator-btns {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 34px;
                 }
             }
         }

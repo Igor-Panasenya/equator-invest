@@ -4,21 +4,18 @@
     padding-bottom: 275px;
 
     .container {
-
       h2 {
         margin: 11px 0 15px 0;
+        color: #fff;
       }
 
       .items-frame {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
-
-        border: red solid 1px;
       }
     }
   }
-
   .container {
     .items-frame {
       margin-top: 20px;
@@ -26,6 +23,34 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+  }
+  .newsletter-box {
+    margin-top: 175px;
+    margin-bottom: 480px;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      background-color: #fff;
+      box-shadow: 0 0 8px rgba(149, 149, 149, 0.1);
+
+      .newsletter-left {
+        width: 50%;
+        background: rgba(77, 183, 93, 0.3);
+        padding: 55px 140px;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+
+      }
+      .newsletter-right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 50%;
+        padding-right: 220px;
+      }
     }
   }
 }
@@ -36,12 +61,23 @@
       width: auto;
       height: 400px;
     }
+    .newsletter-box {
+      margin-top: 75px;
+      margin-bottom: 650px;
+
+      .container {
+        margin: 0 40px;
+
+        .newsletter-left {
+          padding: 45px 60px;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 900px) {
 
   .blog {
-
     .blog-banner {
       padding-top: 132px;
       padding-bottom: 180px;
@@ -62,11 +98,40 @@
         align-items: center;
       }
     }
+    .newsletter-box {
+      margin-top: 75px;
+      margin-bottom: 680px;
+
+      .container {
+        flex-direction: column;
+
+        .newsletter-left {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding: 55px 140px;
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+          article {
+            margin-left: 40px;
+            font-size: 13px;
+            line-height: 14px;
+          }
+        }
+        .newsletter-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 50px 20px;
+        }
+      }
+    }
   }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .blog {
     .bg-image {
       width: auto;
@@ -84,6 +149,93 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+    }
+    .newsletter-box {
+      margin-top: 40px;
+      margin-bottom: 830px;
+
+      .container {
+        flex-direction: column;
+        margin: 0 20px;
+
+        .newsletter-left {
+          display: flex;
+          justify-content: center;
+          padding: 50px 20px;
+
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+
+            label {
+              flex-direction: column;
+              font-size: 15px;
+              line-height: 18px;
+
+              article {
+                margin: 0 auto;
+                font-size: 13px;
+                line-height: 14px;
+              }
+
+              .input-email {
+                position: relative;
+                width: 100%;
+
+                input {
+                  padding: 16px;
+                  background: #FAFAFA;
+                  border: 1px solid #E1E1E1;
+                  width: 100%;
+                  transition: var(--transition);
+
+                  &::placeholder {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgba(0, 0, 0, 0.6);
+                  }
+                  &:hover {
+                    background: rgba(255, 255, 255, 0.5);
+                    border: 1px solid rgba(0, 151, 90, 0.2);
+                    box-shadow: 0px 0px 4px 2px rgba(125, 125, 125, 0.15);
+                  }
+                  &:active, &:focus {
+                    background: rgba(255, 255, 255, 0.8);
+                    border: 1px solid rgba(0, 151, 90, 0.5);
+                    box-shadow: 0 0 8px rgba(149, 149, 149, 0.1);
+                  }
+
+                  input:required:invalid {
+                    border: 1px solid rgba(226, 51, 51, 0.5);
+                  }
+                }
+
+                .text-error {
+                  position: absolute;
+                  bottom: -75px;
+                  color: red;
+                }
+              }
+            }
+
+            .submit {
+              width: 100%;
+            }
+          }
+
+
+        }
+        .newsletter-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 50px 20px;
+        }
       }
     }
   }

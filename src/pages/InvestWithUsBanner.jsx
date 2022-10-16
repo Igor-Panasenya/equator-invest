@@ -1,39 +1,93 @@
 import React from 'react';
 import './scss/iwu.scss';
 import bg from "../img/iwu/iwu.png";
+import FaqItem from "../components/FAQ-item/FAQItem";
 
 function InvestWithUsBanner() {
+
+    const investItem= [
+        {
+            id: 1,
+            title: "Where do you invest?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 2,
+            title: "What do you invest in?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 4,
+            title: "How big is your fund?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 6,
+            title: "Where do you invest?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 7,
+            title: "Do you lead rounds? ",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 8,
+            title: "What is your check size?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 9,
+            title: "How long do you take to decide?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 10,
+            title: "Are you a diversity fund?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 11,
+            title: "What don’t you invest in?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 12,
+            title: "Does our product have to be ready to apply?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 13,
+            title: "Where do you invest?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+        {
+            id: 14,
+            title: "What don’t you invest in?",
+            body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
+        },
+    ];
+
     return (
         <div className="invest-with-us">
             <img className="bg-image" src={bg} alt=""/>
 
             <section className="iwu-banner">
                 <div className="container">
-                    <h1>Invest With Us</h1>
+                    <h2>Invest With Us</h2>
                     <p>We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders.</p>
                 </div>
             </section>
 
             <section className="iwu-FAQ">
                 <div className="container">
-                    <h4>Investor FAQs</h4>
+                    <h5>Investor FAQs</h5>
 
-                    <div className="investor-FAQ-frame">
-
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-                        <div className="item"></div>
-
-                    </div>
+                    <ul className="investor-FAQ-frame">
+                        {investItem.map(item =>
+                            <FaqItem key={item.id} item={item} />
+                        )}
+                    </ul>
                 </div>
             </section>
 
