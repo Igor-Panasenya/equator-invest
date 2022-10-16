@@ -1,0 +1,130 @@
+.invest-with-us {
+    .iwu-banner {
+        padding-top: 164px;
+        padding-bottom: 134px;
+
+        .container {
+
+            p {
+                margin-top: 29px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 161%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+
+                max-width: 665px;
+            }
+        }
+    }
+    .iwu-FAQ {
+        padding-top: 54px;
+        padding-bottom: 135px;
+
+        .investor-FAQ-frame {
+            display: grid;
+            grid-template-columns: 586px 586px;
+            gap: 4px;
+            column-gap: 146px;
+            padding-top: 27px;
+
+
+            .item {
+                border: red solid 1px;
+                width: 100%;
+                height: 68px;
+            }
+        }
+    }
+    .iwu-about-equator {
+        background: rgba(77, 183, 93, 0.3);
+        box-shadow: 0px 0px 8px 2px rgba(120, 120, 120, 0.2);
+        margin-bottom: 172px;
+
+        .container {
+            padding-top: 62px;
+            padding-bottom: 58px;
+
+            h3 {
+                margin-bottom: 24px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: #272727;
+                max-width: 952px;
+            }
+
+            .about-equator-btns {
+                display: flex;
+                gap: 44px;
+                margin-top: 34px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .invest-with-us {
+        .bg-image {
+            width: auto;
+            height: 480px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .invest-with-us {
+        .bg-image {
+            width: auto;
+            height: 400px;
+        }
+
+        .iwu-banner {
+            padding-top: 132px;
+            padding-bottom: 60px;
+
+            .container {
+
+                p {
+                    margin-top: 30px;
+                    margin-bottom: 51px;
+                    font-size: 18px;
+                    line-height: 22px;
+
+                    max-width: 610px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .invest-with-us {
+        .bg-image {
+            width: auto;
+            height: 280px;
+        }
+
+        .iwu-banner {
+            padding-top: 60px;
+            padding-bottom: 30px;
+
+            .container {
+
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    max-width: 610px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(1, 26, 22, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+header .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 19px 10px;
+}
+header .navbar-container .menu {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  transition: var(--transition);
+}
+header .navbar-container .menu .menu-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+header .navbar-container .menu .menu-item:hover {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+}
+header .navbar-container .menu .menu-item.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+header .navbar-container .header-buttons {
+  display: flex;
+  gap: 24px;
+}
+header .navbar-container .hamburger {
+  position: relative;
+  right: 30px;
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 20;
+}
+header .navbar-container .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+header .navbar-container .hamburger .bar-mid {
+  width: 22px;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  header .navbar-container .logo {
+    width: 10%;
+  }
+  header .navbar-container .logo img {
+    width: 100%;
+    height: auto;
+  }
+  header .navbar-container .menu {
+    gap: 35px;
+  }
+  header .navbar-container .menu .menu-item {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  header .navbar-container .header-buttons {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .navbar-container {
+    padding: 10px 10px;
+  }
+  header .navbar-container .logo {
+    position: relative;
+    width: 100px;
+    z-index: 20;
+  }
+  header .navbar-container .logo img {
+    width: 100%;
+    height: auto;
+  }
+  header .navbar-container .menu {
+    position: absolute;
+    top: -500%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 5;
+    width: 100vw;
+  }
+  header .navbar-container .menu.active {
+    padding: 50px 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .navbar-container .menu .menu-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  header .navbar-container .header-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    width: 100vw;
+  }
+  header .navbar-container .header-buttons .btn-type-primary {
+    position: absolute;
+    bottom: -455px;
+    left: -50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    z-index: 5;
+  }
+  header .navbar-container .header-buttons .btn-type-secondary {
+    position: absolute;
+    bottom: -500px;
+    left: 150%;
+    transform: translateX(-50%);
+    width: 80vw;
+    z-index: 5;
+  }
+  header .navbar-container .header-buttons.active .btn-type-primary {
+    left: 50%;
+  }
+  header .navbar-container .header-buttons.active .btn-type-secondary {
+    left: 50%;
+  }
+  header .navbar-container .hamburger {
+    display: block;
+  }
+  header .navbar-container .hamburger.active {
+    position: fixed;
+    right: 40px;
+  }
+  header .navbar-container .hamburger.active .bar-mid {
+    opacity: 0;
+  }
+  header .navbar-container .hamburger.active .bar-top {
+    width: 25px;
+    transform: translateY(8.33px) rotate(225deg);
+  }
+  header .navbar-container .hamburger.active .bar-bottom {
+    width: 25px;
+    transform: translateY(-8.33px) rotate(-225deg);
+  }
+  header .navbar-container .bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0vh;
+    z-index: 4;
+    background: rgb(1, 26, 22);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+  }
+  header .navbar-container .bg-blur.active {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

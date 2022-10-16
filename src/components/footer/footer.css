@@ -1,0 +1,107 @@
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background: #00463D;
+}
+footer .container {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+footer .container .footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .container .left-column {
+  width: 316px;
+  border: red solid 1px;
+}
+footer .container .left-column .socials {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+footer .container .left-column .socials a:hover, footer .container .left-column .socials a:hover * {
+  scale: 1.05;
+}
+footer .container .mid-column {
+  width: 845px;
+  border: red solid 1px;
+}
+footer .container .mid-column .menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 9px;
+}
+footer .container .mid-column .menu .menu-item {
+  font-size: 14px;
+  line-height: 17px;
+}
+footer .container .mid-column .newsletter form {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 1px;
+}
+footer .container .mid-column .newsletter form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: start;
+  color: #FFFFFF;
+  gap: 9px;
+}
+footer .container .mid-column .newsletter form label input {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #E1E1E1;
+  width: 220px;
+  transition: var(--transition);
+}
+footer .container .mid-column .newsletter form label input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+footer .container .mid-column .newsletter form label input:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 151, 90, 0.2);
+  box-shadow: 0px 0px 4px 2px rgba(125, 125, 125, 0.15);
+}
+footer .container .mid-column .newsletter form label input:active, footer .container .mid-column .newsletter form label input:focus {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 151, 90, 0.5);
+  box-shadow: 0px 0px 8px rgba(149, 149, 149, 0.1);
+}
+footer .container .mid-column .newsletter form .submit {
+  width: 64px;
+  height: 48px;
+  background: #00975A;
+}
+footer .footer-info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 11px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1300px) {
+  footer .footer-info {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

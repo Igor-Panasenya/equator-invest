@@ -1,0 +1,56 @@
+.stories-item {
+    position: relative;
+    width: 464px;
+    height: 282px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    &:hover .stories-text .reed-more span {
+        text-decoration-line: underline;
+    }
+
+    .bg-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        filter: drop-shadow(0px 0px 8px rgba(149, 149, 149, 0.1));
+        z-index: 0;
+    }
+
+    .stories-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 11.79px;
+        padding: 25px;
+        z-index: 1;
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #F4F4F4;
+            max-width: 272px;
+        }
+
+        .reed-more {
+            display: flex;
+            flex-direction: row;
+            gap: 11.8px;
+
+            * {
+                width: auto;
+            }
+        }
+
+
+    }
+}

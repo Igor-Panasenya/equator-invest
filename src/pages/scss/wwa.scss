@@ -1,0 +1,163 @@
+.who-we-are {
+  .wwa-banner {
+    padding-top: 164px;
+    padding-bottom: 100px;
+
+    .container {
+
+      h3 {
+        color: #fff;
+        margin: 11px 0 15px 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 161%;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+
+        color: #EBEBEB;
+        max-width: 855px;
+      }
+    }
+  }
+  .wwa-content {
+    .container {
+      padding-top: 104px;
+      padding-bottom: 200px;
+
+      h3 {
+        margin-bottom: 28px;
+      }
+
+      .items-frame {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+      }
+
+      .our-team-advisors {
+        margin-top: 158px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #333333;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .who-we-are {
+    .bg-image {
+      width: auto;
+      height: 580px;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .wwa-content {
+    .container {
+      .items-frame {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .who-we-are {
+    .bg-image {
+      width: auto;
+      height: 430px;
+    }
+    .wwa-banner {
+      padding-top: 132px;
+      padding-bottom: 60px;
+
+      .container {
+
+        h2 {
+          margin: 11px 0 15px 0;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 121%;
+          max-width: 85%;
+        }
+      }
+    }
+    .wwa-content {
+      .container {
+        padding-bottom: 200px;
+        padding-top: 104px;
+
+        h3, .our-team-advisors {
+          display: flex;
+          justify-content: center;;
+        }
+
+        .items-frame {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 24px;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .who-we-are {
+    .bg-image {
+      width: auto;
+      height: 380px;
+    }
+
+    .wwa-banner {
+      padding: 60px 0;
+
+      .container {
+
+        p {
+          font-size: 12px;
+          line-height: 14px;
+          max-width: 100%;
+        }
+      }
+    }
+    .wwa-content {
+      .container {
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        h3, .our-team-advisors {
+          display: flex;
+          justify-content: center;
+        }
+        .our-team-advisors {
+          margin-top: 50px;
+        }
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 280px) {
+  .who-we-are {
+    .bg-image {
+      width: auto;
+      height: 420px;
+    }
+  }
+}

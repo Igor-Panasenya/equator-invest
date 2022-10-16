@@ -1,0 +1,132 @@
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background: #00463D;
+
+  .container {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 45px;
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .left-column {
+      width: 316px;
+      border: red solid 1px;
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+
+        a:hover, a:hover * {
+          scale: 1.05;
+        }
+      }
+
+
+    }
+    .mid-column {
+      width: 845px;
+      border: red solid 1px;
+
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 0 9px;
+
+        .menu-item {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .newsletter {
+
+
+        form {
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+          gap: 1px;
+
+          label {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: start;
+            color: #FFFFFF;
+            gap: 9px;
+
+            input {
+              padding: 16px;
+              background: rgba(255, 255, 255, 0.5);
+              border: 1px solid #E1E1E1;
+              width: 220px;
+              transition: var(--transition);
+
+              &::placeholder {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.6);
+              }
+
+              &:hover {
+                background: rgba(255, 255, 255, 0.5);
+                border: 1px solid rgba(0, 151, 90, 0.2);
+                box-shadow: 0px 0px 4px 2px rgba(125, 125, 125, 0.15);
+              }
+
+              &:active, &:focus {
+                background: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 151, 90, 0.5);
+                box-shadow: 0px 0px 8px rgba(149, 149, 149, 0.1);
+              }
+            }
+          }
+          .submit {
+            width: 64px;
+            height: 48px;
+            background: #00975A;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 11px 0;
+
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  footer {
+
+    .footer-info {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+}
