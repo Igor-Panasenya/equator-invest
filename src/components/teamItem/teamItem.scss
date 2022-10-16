@@ -1,0 +1,109 @@
+.team-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    width: 464px;
+    height: 230px;
+    padding: 34px 30px 36px 34px;
+
+    background: #FDFDFD;
+    box-shadow: 0px 0px 8px rgba(149, 149, 149, 0.1);
+    border-radius: 2px;
+
+    .border-frame {
+        position: absolute;
+        
+        top: 17px;
+        left: 17px;
+        width: 96px;
+        height: 136px;
+        border-top: 1px solid #00975A;
+        border-left: 1px solid #00975A;
+    }
+
+    img {
+        width: 160px;
+        height: 160px;
+
+        border: teal solid 2px;
+    }
+
+    .team-iteam-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6px;
+
+        .item-name {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: #2D2D2D;
+        }
+        .item-job-title {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 21px;
+            color: #2D2D2D;
+            margin: 5px 0 28px 0;
+        }
+        .item-socials {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            a:hover svg path {
+                transition: all ease .15s;
+            }
+            a:first-child:hover svg path {
+                fill: #0A66C2;
+            }
+            a:last-child:hover svg path {
+                fill: #1DA1F2;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .team-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 230px;
+        height: auto;
+        padding: 20px;
+    
+        .border-frame {
+            display: none;
+        }
+    
+        img {
+            width: 160px;
+            height: 160px;
+        }
+    
+        .team-iteam-content {
+            align-items: center;
+    
+            .item-name {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .item-job-title {
+                font-size: 14px;
+                line-height: 16px;
+                margin: 5px 0 15px 0;
+            }
+            .item-socials {
+                gap: 24px;
+
+                svg {
+                    width: 80%;
+                }
+            }
+    
+        }
+    }
+}

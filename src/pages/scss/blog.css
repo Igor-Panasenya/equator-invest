@@ -1,0 +1,62 @@
+.blog .blog-banner {
+  padding-top: 164px;
+  padding-bottom: 275px;
+}
+.blog .blog-banner .container h2 {
+  margin: 11px 0 15px 0;
+}
+.blog .blog-banner .container .items-frame {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  border: red solid 1px;
+}
+.blog .container .items-frame {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .blog .bg-image {
+    width: auto;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .blog .blog-banner {
+    padding-top: 132px;
+    padding-bottom: 180px;
+  }
+  .blog .blog-banner .container h2 {
+    margin: 11px 0 15px 0;
+  }
+  .blog .container .items-frame {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog .bg-image {
+    width: auto;
+    height: 280px;
+  }
+  .blog .blog-banner {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .blog .container .items-frame {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */

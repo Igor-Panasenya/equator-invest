@@ -1,0 +1,208 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(1, 26, 22, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 19px 10px;
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 55px;
+      transition: var(--transition);
+
+      .menu-item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 700;
+        }
+
+        &.active {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+    .header-buttons {
+      display: flex;
+      gap: 24px;
+    }
+    .hamburger {
+      position: relative;
+      right: 30px;
+      display: none;
+      cursor: pointer;
+      background-color: transparent;
+      z-index: 20;
+
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        border-radius: 5px;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #ffffff;
+      }
+
+      .bar-mid {
+        width: 22px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    .navbar-container {
+
+      .logo {
+        width: 10%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .menu {
+        gap: 35px;
+
+        .menu-item {
+            font-size: 10px;
+            line-height: 20px;
+        }
+      }
+      .header-buttons {
+        gap: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    .navbar-container {
+      padding: 10px 10px;
+
+      .logo {
+        position: relative;
+        width: 100px;
+        z-index: 20;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .menu {
+        position: absolute;
+        top: -500%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        z-index: 5;
+        width: 100vw;
+
+        &.active {
+          padding: 50px 10px;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .menu-item {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+      .header-buttons {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        width: 100vw;
+
+        .btn-type-primary {
+          position: absolute;
+          bottom: -455px;
+          left: -50%;
+          transform: translateX(-50%);
+          width: 80vw;
+          z-index: 5;
+        }
+        .btn-type-secondary {
+          position: absolute;
+          bottom: -500px;
+          left: 150%;
+          transform: translateX(-50%);
+          width: 80vw;
+          z-index: 5;
+        }
+
+        &.active {
+          .btn-type-primary {
+            left: 50%;
+          }
+          .btn-type-secondary {
+            left: 50%;
+          }
+        }
+      }
+      .hamburger {
+        display: block;
+
+        &.active {
+          position: fixed;
+          right: 40px;
+
+          .bar-mid {
+            opacity: 0;
+          }
+          .bar-top {
+            width: 25px;
+            transform: translateY(8.33px) rotate(225deg);
+          }
+          .bar-bottom {
+            width: 25px;
+            transform: translateY(-8.33px) rotate(-225deg);
+          }
+        }
+      }
+      .bg-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 0vh;
+        z-index: 4;
+        background: rgba(1, 26, 22, 1);
+        backdrop-filter: blur(5px);
+        transition: var(--transition);
+
+        &.active {
+          width: 100vw;
+          height: 100vh;
+        }
+      }
+    }
+  }
+}
