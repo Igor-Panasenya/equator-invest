@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './scss/iwu.scss';
 import bg from "../img/iwu/iwu.png";
 import FaqItem from "../components/FAQ-item/FAQItem";
+import ModalSyndicate from "../components/IU/modal-syndicate/ModalSyndicate";
 
-function InvestWithUsBanner() {
+function InvestWithUs() {
 
     const investItem= [
         {
@@ -66,7 +67,8 @@ function InvestWithUsBanner() {
             title: "What don’t you invest in?",
             body: "We focus on investing in high-potential Fintech startups at angel to pre-seed stages, with teams that ideally include great engineers, designers, product and business founders. DO not worry if you don’t have the “perfect” team, we will work with you if we see great potential. ",
         },
-    ];
+    ]
+    const [joinSyndicate, setJoinSyndicate] = useState(false)
 
     return (
         <div className="invest-with-us">
@@ -121,14 +123,18 @@ function InvestWithUsBanner() {
                     </p>
 
                     <div className="about-equator-btns">
-                        <button className="btn-type-primary">Join Our Syndicate</button>
+                        <button onClick={() => setJoinSyndicate(true)} className="btn-type-primary">Join Our Syndicate</button>
                         <button className="btn-type-secondary">Became an LP</button>
                     </div>
+
+                    <ModalSyndicate joinSyndicate={joinSyndicate} />
+                    {joinSyndicate && <div onClick={() => {setJoinSyndicate(false)}} className="bg-dark"></div>}
+
                 </div>
             </section>
         </div>
     );
   }
   
-  export default InvestWithUsBanner;
+  export default InvestWithUs;
   

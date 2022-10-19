@@ -7,7 +7,7 @@ import WhatWeLookFor from "./pages/WhatWeLookFor";
 import HowWeHelp from "./pages/HowWeHelp";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
-import InvestWithUsBanner from "./pages/InvestWithUsBanner";
+import InvestWithUsBanner from "./pages/InvestWithUs";
 
 function App() {
   return (
