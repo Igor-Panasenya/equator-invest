@@ -11,8 +11,6 @@ import imageEmail from '../../img/footer/email.png';
 import imageLocation from '../../img/footer/location.png';
 
 const Footer = () => {
-
-
     return (
         <footer>
             <div className="container">
@@ -36,7 +34,6 @@ const Footer = () => {
                     </div>
 
                     <div className="newsletter">
-
                         <NewslettersInput />
                     </div>
                 </div>

@@ -69,6 +69,12 @@ function InvestWithUs() {
         },
     ]
     const [joinSyndicate, setJoinSyndicate] = useState(false)
+    const [step, setStep] = useState(1)
+    const onClickButtonSyndicate = () => {
+        setJoinSyndicate(true);
+        setStep(1);
+        window.scroll(0,0);
+    }
 
     return (
         <div className="invest-with-us">
@@ -123,11 +129,15 @@ function InvestWithUs() {
                     </p>
 
                     <div className="about-equator-btns">
-                        <button onClick={() => setJoinSyndicate(true)} className="btn-type-primary">Join Our Syndicate</button>
+                        <button onClick={() => onClickButtonSyndicate()} className="btn-type-primary">Join Our Syndicate</button>
                         <button className="btn-type-secondary">Became an LP</button>
                     </div>
 
-                    <ModalSyndicate joinSyndicate={joinSyndicate} />
+                    {
+                        step <= 4 &&
+                        <ModalSyndicate joinSyndicate={joinSyndicate} step={step} setStep={setStep}/>
+                    }
+
                     {joinSyndicate && <div onClick={() => {setJoinSyndicate(false)}} className="bg-dark"></div>}
 
                 </div>
@@ -135,6 +145,5 @@ function InvestWithUs() {
         </div>
     );
   }
-  
+
   export default InvestWithUs;
-  

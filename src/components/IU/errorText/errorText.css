@@ -1,0 +1,19 @@
+.error-text {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #E23333 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .error-text {
+    font-size: 12px;
+    top: -15px;
+    line-height: 100%;
+  }
+}
+
+/*# sourceMappingURL=errorText.css.map */

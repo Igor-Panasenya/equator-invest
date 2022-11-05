@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navbar-container">
+            <div className="navbar-container">
                 <Logo setIsActiveHamburger={setIsActiveHamburger} image={logo}/>
 
                 <div className={isActiveHamburger ? "menu active" : "menu"}>
@@ -38,7 +38,7 @@ const Header = () => {
 
                 <div className={isActiveHamburger ? "bg-blur active" : "bg-blur"}></div>
 
-            </nav>
+            </div>
         </header>
     );
 };

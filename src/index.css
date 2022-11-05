@@ -158,8 +158,13 @@ header .btn-type-secondary:active {
   background: rgba(0, 151, 90, 0.7);
 }
 
+.form * {
+  transition: all 0.5s ease;
+}
+
 @media screen and (max-width: 1300px) {
   .btn-type-primary {
+    box-sizing: border-box;
     font-size: 12px;
     line-height: 16px;
     padding: 10px 31px;

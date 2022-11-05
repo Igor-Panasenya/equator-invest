@@ -29,7 +29,6 @@ form label .input-email {
   width: 100%;
 }
 form label .input-email input {
-  padding: 16px;
   background: #FAFAFA;
   border: 1px solid #E1E1E1;
   width: 100%;
@@ -51,26 +50,28 @@ form label .input-email input:active, form label .input-email input:focus {
   border: 1px solid rgba(0, 151, 90, 0.5);
   box-shadow: 0 0 8px rgba(149, 149, 149, 0.1);
 }
-form label .input-email input input:required:invalid {
+form label .input-email input:invalid {
   border: 1px solid rgba(226, 51, 51, 0.5);
 }
-form label .input-email .text-error {
-  position: absolute;
-  bottom: -20px;
-  color: red;
-}
-form .submit {
+form .footer-submit {
   position: relative;
-  width: 64px;
-  height: 50px;
-  padding: 0;
+  padding: 0 32px;
+  height: 58px !important;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   form label article {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 10px;
+  }
+  form .footer-submit {
+    height: 37px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  form .footer-submit {
+    height: 25px !important;
   }
 }
 
